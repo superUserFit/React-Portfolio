@@ -2,7 +2,6 @@ import intermediate from "../assets/intermediate.svg";
 import basic from "../assets/basic.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import colorSharp from "../assets/color-sharp.png";
 
 export const Skills = () => {

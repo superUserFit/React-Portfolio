@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
 import logo from "../assets/logo.png";
@@ -43,10 +43,10 @@ export const NavigationBar = () => {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="#"><IoLogoWhatsapp size={20} color="white" /></a>
-                        <a href="#"><BsGithub size={20} color="white" /></a>
+                        <a href="tel:+60128066867" target="_blank" rel="noopener"><IoLogoWhatsapp size={20} color="white" /></a>
+                        <a href="https://github.com/superUserFit" target="_blank" rel="noopener"><BsGithub size={20} color="white" /></a>
                     </div>
-                    <button type="button" className="vvd" onClick={() => console.log("Clicked")}>Let's Connect</button>
+                    <a href="tel:+60128066867" target="_blank"><button type="button" className="vvd">Let's Connect</button></a>
                 </span>
             </Navbar.Collapse>
         </Navbar>

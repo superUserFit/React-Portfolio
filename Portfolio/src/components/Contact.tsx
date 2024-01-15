@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import 'animate.css';
@@ -37,7 +36,7 @@ export const Contact = () => {
                       <input type="tel" placeholder="Phone No." />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" placeholder="Message" ></textarea>
+                      <textarea placeholder="Message" ></textarea>
                       <button type="submit"><span>Send</span></button>
                     </Col>
                   </Row>

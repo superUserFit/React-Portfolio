@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import 'animate.css';
-import floatingImage from '../assets/float.png';
 import TrackVisibility from 'react-on-screen';
 
 
@@ -12,7 +11,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "Programmer" ];
+    const toRotate = [ "Web Developer", "Backend Developer", "Programmer" ];
     const period = 2000;
 
     useEffect(() => {
@@ -60,11 +59,11 @@ export const Banner = () => {
                                 <h3>Hi! My name is Fitenson</h3>
                                 <h1>
                                     {`I'm a`}{' '}
-                                    <span className="txt-rotate" data-period="500" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
+                                    <span className="txt-rotate" data-period="500" data-rotate='[ "Web Developer", "Backend Developer" ]'>
                                         <span className="wrap">{text}</span>
                                     </span>
                                 </h1>
-                                <button type="button" onClick={() => console.log('connect')}>Let’s Connect <FaArrowRight size={25} /></button>
+                                <a href="tel:+60128066867" className="text-decoration-none"><button type="button">Let's Connect <FaArrowRight size={25} /></button></a>
                             </div>}
                         </TrackVisibility>
                     </Col>
